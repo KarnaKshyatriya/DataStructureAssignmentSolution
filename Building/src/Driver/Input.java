@@ -13,12 +13,12 @@ public class Input {
 	Input()
 	{
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter number of floors");
+		System.out.println("enter the total no of floors in the building");
 		number=sc.nextInt();
 
 		for(int i=1;i<=number;i++)
 		{
-			System.out.println("Enter floor");
+			System.out.println("enter the floor size given on day : "+i);
 			storey=sc.nextInt();
 			fl=new Floors(storey,i);
 			al.add(fl);
