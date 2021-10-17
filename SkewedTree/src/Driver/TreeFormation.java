@@ -2,8 +2,8 @@ package Driver;
 import java.util.*;
 
 public class TreeFormation {
-BST bst;
-	
+	BST bst;
+
 	Node root = null;
 	public Node treeFormation()
 	{
@@ -16,7 +16,7 @@ BST bst;
 		int size=sc.nextInt();
 		int[] arr=new int[size];
 
-
+		System.out.println("Enter the values for the BST");
 		for (int i = 0; i < arr.length; i++)
 		{
 			arr[i]=sc.nextInt();
@@ -34,13 +34,13 @@ BST bst;
 			}
 		}
 
-		
+
 		sc.close();
 		return root;
 	}
 
-	
+
 }
 
 
-}
+
