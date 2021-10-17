@@ -25,11 +25,12 @@ public class Input {
 		}
 
 		Collections.sort(al,Collections.reverseOrder());
-
 		stringFormation(al, number);
+		
+		sc.close();
 	}
 
-	
+
 
 	public void stringFormation(ArrayList<Floors> b,int kotola)
 	{
@@ -39,7 +40,7 @@ public class Input {
 		Floors jb=b.get(index);
 
 		int counter=jb.days;
-		
+
 		String s="";
 		for(int h=0;h<check;h++)
 		{
@@ -47,31 +48,20 @@ public class Input {
 			{
 				while(counter>=jb.days)
 				{
-
-
-
 					s=s+Integer.toString(jb.floorNo)+"  ";
-
 					index+=1;
 					if(index<check)
 					{
 
 						jb=b.get(index);
-
 					}
 					else
 					{
 						break;
 					}
-
-
 				}
 				str[h]=s;
-
 				s="";
-
-
-
 				counter=jb.days;
 
 			}
